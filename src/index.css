@@ -39,27 +39,56 @@ h1 {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
   background: #c0c0c0;
-  padding: 12px 20px;
+  padding: 12px 16px;
   border: 3px outset #fff;
   margin-bottom: 10px;
   border-radius: 4px;
 }
 
-.stats {
+.header-bar {
   display: flex;
-  gap: 24px;
-  font-weight: bold;
-  font-size: 1.1rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-width: 200px;
 }
 
-.controls {
+.counter {
+  min-width: 52px;
+  padding: 4px 6px;
+  background: #000;
+  color: #f00;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px inset #808080;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.face-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 1;
+  background: #e0e0e0;
+  border: 2px outset #fff;
+  cursor: pointer;
   display: flex;
-  gap: 12px;
   align-items: center;
+  justify-content: center;
+}
+
+.face-btn:active {
+  border-style: inset;
 }
 
 .difficulty-select {
@@ -68,19 +97,6 @@ h1 {
   border: 2px solid #808080;
   background: white;
   cursor: pointer;
-}
-
-.reset-btn {
-  padding: 8px 16px;
-  font-size: 1rem;
-  background: #e0e0e0;
-  border: 2px outset #fff;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.reset-btn:active {
-  border-style: inset;
 }
 
 .board {

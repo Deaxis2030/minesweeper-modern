@@ -30,6 +30,8 @@ function App() {
         onReset={resetGame}
         difficulty={difficulty}
         onChangeDifficulty={changeDifficulty}
+        gameOver={gameOver}
+        won={won}
       />
 
       <Board
